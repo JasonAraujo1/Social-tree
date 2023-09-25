@@ -1,1 +1,76 @@
-/*font-family: 'Poppins', sans-serif;*/
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgba(253, 243, 208, 0.233); /*fundo branco*/
+
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh; /* Usar min-height em vez de height */
+    margin: 0;
+    padding: 30px;
+}
+
+.container{
+    border: 2px solid peru;
+    background: #f6e2ff83;
+    border-radius: 8px;
+}
+
+/*photo and profile name*/
+.photoProfile{
+    display: flex;
+    width: 213px;
+    border:2px solid rgba(187, 153, 221, 1);
+    border-radius: 50%;
+    padding: 4px;
+    margin: auto;
+
+}
+
+div p{
+   border: 2px solid blue;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 15px 30px 30px;
+   color: rgba(187, 153, 221, 1);
+}
+
+/*links buttom*/
+
+ul{
+    display: flex;
+
+    border: 2px solid rgb(91, 224, 64);
+    list-style: none;
+    flex-direction: column;
+    gap: 16px ;
+    align-items: center;
+    justify-content: center;
+
+}
+
+ul li a{
+    display: flex;
+    border:2px solid rgba(187, 153, 221, 1);
+    padding: 16px 24px;
+    min-width: 326px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-weight: 600;
+    color: rgba(187, 153, 221, 1);
+    ;
+}
+
+.socialLInks{
+    border: 2px solid red;
+    width: 24px;
+}
