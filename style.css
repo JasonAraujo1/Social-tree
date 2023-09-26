@@ -12,13 +12,14 @@ body {
     font-family: 'Poppins', sans-serif;
     min-height: 100vh; /* Usar min-height em vez de height */
     margin: 0;
-    padding: 30px;
+    padding: 20px;
 }
 
 .container{
     background: #f6e2ff83;
     border-radius: 8px;
     height: 100vh;
+    max-height: 95vh;
     padding: 100px;
 }
 
@@ -53,7 +54,6 @@ ul{
     gap: 16px ;
     align-items: center;
     justify-content: center;
-
 }
 
 ul li a{
@@ -69,6 +69,7 @@ ul li a{
     color: rgba(187, 153, 221, 1);
     font-size: 16px;
     font-weight: 600;
+    
 }
 
 
@@ -87,3 +88,51 @@ ul li a{
   img {
     width: 28px; /* Define a largura da imagem como 200 pixels */
   }
+
+  
+
+  /*hover animations*/
+
+    #socialLInks a:hover img {
+        transform: rotate(360deg); /* Gira a imagem em 360 graus ao passar o mouse */
+        transition: transform 3s ease; /* Adiciona uma transição suave para a rotação */
+        filter: hue-rotate(60deg); /* Altera a cor da imagem ao passar o mouse */
+    }
+
+    #socialLInks a {
+        position: relative; /* Para que os pseudo-elementos se posicionem em relação a este elemento */
+    }
+
+    #socialLInks a::before {
+        content: ''; /* Conteúdo vazio para criar o círculo */
+        position: absolute;
+        top: 50%; /* Alinha o círculo verticalmente ao centro do ícone */
+        left: 50%; /* Alinha o círculo horizontalmente ao centro do ícone */
+        transform: translate(-50%, -50%); /* Move o círculo para o centro do ícone */
+        width: 0; /* Inicialmente, o círculo terá um tamanho de 0 */
+        height: 0; /* Inicialmente, o círculo terá um tamanho de 0 */
+        border-radius: 50%; /* Torna o elemento um círculo */
+        background-color: transparent; /* Define a cor de fundo inicial como transparente */
+        transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease; /* Adiciona transições suaves */
+}
+
+    #socialLInks a:hover::before {
+        width: 66px; /* Define a largura do círculo ao passar o mouse */
+        height: 66px; /* Define a altura do círculo ao passar o mouse */
+        background-color: rgba(236, 216, 255, 0.534); /* Define a cor de fundo do círculo ao passar o mouse */
+    }
+
+
+
+    ul li a:hover{
+        
+         /* Adiciona uma transição suave para a rotação */
+        background-color:  rgba(236, 216, 255, 0.534);
+        transition: 0.3s;
+        border: 2px solid rgba(255, 255, 255, 0);
+    }
+
+
+    
+
+    
