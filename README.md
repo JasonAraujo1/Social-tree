@@ -19,7 +19,7 @@ Os projetos no portfólio têm a finalidade de aprimorar habilidades e conhecime
 <br>
 
 <p align="center">
-  <img alt="projeto social tree" src="./assets/readme.png.png/" width="100%">
+  <img alt="projeto social tree" src="./assets/readme.png/" width="100%">
 </p>
 
 ## 🚀 Tecnologias
