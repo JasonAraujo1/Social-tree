@@ -153,7 +153,7 @@ ul{
 
 
 
-    ul li a:hover{
+    ul li a:hover{/*cor da letra*/
         
          /* Adiciona uma transição suave para a rotação */
         background-color:  var(--color-items);
@@ -163,11 +163,14 @@ ul{
 
     }
 
+
     
 
-    ul li a.ativo:hover{
-        background-color: rgba(255, 235, 205, 0.582);
-        border: 1px solid var(--color-items) ;
-       
-    }
+
+/* Cor final no hover */
+ul li a.ativo:hover {
+    background-color: rgba(239, 243, 23, 0.822); /* 0.5 define 50% de opacidade */
+    border: 1px solid var(--color-items);
+    transition: 0.5s;
+}
 
