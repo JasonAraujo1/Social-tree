@@ -160,13 +160,13 @@ ul{
         transition: 0.5s;
         border: 1px solid rgba(255, 255, 255, 0);
         color: rgba(134, 34, 233, 0.692);
+
     }
 
     
 
-    ul li a.ativo{
+    ul li a.ativo:hover{
         background-color: rgba(255, 235, 205, 0.582);
         border: 1px var(--color-items) ;
-
     }
 
