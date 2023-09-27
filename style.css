@@ -15,7 +15,8 @@ body {
 }
 
 :root{
---color-items:blanchedalmond;
+--color-items:rgb(241, 245, 7);
+--color-items-lighter: rgba(255, 235, 205, 0.952);
 
 
 
@@ -36,7 +37,7 @@ body {
 
     display: block;
     width: 213px;
-    border:2px solid var(--color-items);
+    border:2px solid var(--color-items-lighter);
     border-radius: 50%;
     padding: 4px;
     margin: 30px auto ;  
@@ -53,7 +54,7 @@ div p{
    align-items: center;
    justify-content: center;
    padding: 15px 30px 30px;
-   color:var(--color-items);
+   color:var(--color-items-lighter);
 
    font-size: 16px;
    font-weight: 300;
@@ -165,5 +166,7 @@ ul{
 
     ul li a.ativo{
         background-color: rgba(255, 235, 205, 0.582);
+        border: 1px var(--color-items) ;
+
     }
 
