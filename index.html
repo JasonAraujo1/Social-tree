@@ -56,10 +56,21 @@
         
     </div>
 
+    <script>
+        const links = document.querySelectorAll("ul li a");
 
+        links.forEach(link => {
+            link.addEventListener("click", () => {
+                // Remova a classe "ativo" de todos os links
+                links.forEach(l => l.classList.remove("ativo"));
+                // Adicione a classe "ativo" apenas ao link clicado
+                link.classList.add("ativo");
+            });
+        });
+    </script>
   
   </div> 
 
-  
+  <script src="./script.js"></script>
 </body>
 </html>
