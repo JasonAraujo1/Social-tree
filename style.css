@@ -30,6 +30,7 @@ body {
     border-radius: 8px;
     flex-direction: column;
     height: 95vh;
+    min-height: 755px;
 }
 
 /*photo and profile name*/
